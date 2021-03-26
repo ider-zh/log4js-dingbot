@@ -2,6 +2,7 @@
   "name": "@ruangnazi/log4js-dingbot",
   "version": "1.0.0",
   "description": "log4js dingding appender",
+  "author": "326737833@qq.com",
   "keywords": [
     "logging",
     "log",
