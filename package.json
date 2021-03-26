@@ -1,7 +1,7 @@
 {
   "name": "@ruangnazi/log4js-dingbot",
   "version": "1.0.0",
-  "description": "dingding appender",
+  "description": "log4js dingding appender",
   "keywords": [
     "logging",
     "log",
