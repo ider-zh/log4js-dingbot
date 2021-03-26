@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2020",
+    "sourceMap": true,
+    "outDir": "dist",
+    "declaration": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "esModuleInterop": true,
+    "plugins": [
+      {
+        "name": "typescript-snapshots-plugin",
+        "snapshotCallIdentifiers": [
+          "toMatchSnapshot",
+          "toThrowErrorMatchingSnapshot",
+          "toMatchDiffSnapshot"
+        ]
+      }
+    ]
+  },
+  "exclude": ["node_modules", "dist"]
+}

@@ -1,0 +1,58 @@
+{
+  "name": "@ruangnazi/log4js-dingbot",
+  "version": "1.0.0",
+  "description": "dingding appender",
+  "keywords": [
+    "logging",
+    "log",
+    "log4j",
+    "node",
+    "dingbot"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ider-zh/log4js-dingbot.git"
+  },
+  "license": "MIT",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist/src"
+  ],
+  "scripts": {
+    "pretest": "eslint 'src/**/*.ts' 'test/**/*.ts'",
+    "test": "tap 'dist/test/tap/**/*.js'",
+    "coverage": "nyc yarn run test"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{css,less,scss,sass,html,htm,vue,yml,yaml,json,md}": [
+      "prettier --write"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "log4js": "^6.3.0"
+  },
+  "devDependencies": {
+    "@log4js-node/sandboxed-module": "^2.2.1",
+    "@types/node": "^14.14.36",
+    "@types/tap": "^14.10.3",
+    "eslint": "^7",
+    "haoma": "^2.31.0",
+    "husky": "^4",
+    "lint-staged": "^10",
+    "prettier": "^2",
+    "standard-version": "^9",
+    "tap": "^14.11.0",
+    "typescript": "^4.2.3"
+  }
+}
