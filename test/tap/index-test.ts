@@ -3,7 +3,7 @@
  * @Author: ider
  * @Date: 2021-03-25 09:18:54
  * @LastEditors: ider
- * @LastEditTime: 2021-03-27 01:54:38
+ * @LastEditTime: 2021-04-06 11:56:44
  * @Description:
  */
 
@@ -69,6 +69,7 @@ function setupLogging(
       },
       globals: {
         console: fakeConsole,
+        TextEncoder: TextEncoder
       },
     })
     .configure(options, fakeLayouts)
@@ -99,6 +100,7 @@ test('log4js dingbotAppender', batch => {
       {
         access_token: 'TOKEN',
         secret: '#secret',
+        sendInterval:0,
       },
       null,
       null,
@@ -118,6 +120,7 @@ test('log4js dingbotAppender', batch => {
       {
         access_token: 'TOKEN',
         secret: '#secret',
+        sendInterval: 0,
       },
       null,
       null,
@@ -134,6 +137,7 @@ test('log4js dingbotAppender', batch => {
     const setup = setupLogging(
       {
         access_token: 'TOKEN',
+        sendInterval: 0,
       },
       null,
       null,
@@ -185,6 +189,7 @@ test('log4js dingbotAppender', batch => {
       {
         access_token: 'TOKEN',
         secret: '#secret',
+        sendInterval: 0,
       },
       null,
       null,
@@ -203,6 +208,7 @@ test('log4js dingbotAppender', batch => {
       {
         access_token: 'TOKEN',
         secret: '#secret',
+        sendInterval: 0,
       },
       null,
       '444',
@@ -221,6 +227,7 @@ test('log4js dingbotAppender', batch => {
       {
         access_token: 'TOKEN',
         secret: '#secret',
+        sendInterval: 0,
       },
       Error('net error'),
       null,
@@ -241,6 +248,7 @@ test('log4js dingbotAppender', batch => {
       {
         access_token: 'TOKEN',
         secret: '#secret',
+        sendInterval: 0,
         shutdownTimeout: 1,
       },
       null,
@@ -261,6 +269,7 @@ test('log4js dingbotAppender', batch => {
         {
           access_token: 'TOKEN',
           secret: '#secret',
+          sendInterval: 0,
           shutdownTimeout: 1,
         },
         null,
