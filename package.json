@@ -1,20 +1,21 @@
 {
   "name": "@ruangnazi/log4js-dingbot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "log4js dingding appender",
-  "author": "326737833@qq.com",
   "keywords": [
     "logging",
     "log",
-    "log4j",
-    "node",
-    "dingbot"
+    "log4js",
+    "dingbot",
+    "dingtalk",
+    "钉钉"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/ider-zh/log4js-dingbot.git"
   },
   "license": "MIT",
+  "author": "326737833@qq.com",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "files": [
@@ -55,5 +56,8 @@
     "standard-version": "^9",
     "tap": "^14.11.0",
     "typescript": "^4.2.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
